@@ -6,7 +6,7 @@ import csv
 import json
 
 app = Flask(__name__)
-API_KEY_ABUSEIPDB = 'dfeb4d88e22c7e4e0f4bc9b421aa324466c21147def98de2e400a159c5dc9e1c57b1bcc78734d461'
+API_KEY_ABUSEIPDB = ''
 
 # Regex para encontrar IPs e MACs em qualquer texto
 IP_REGEX = re.compile(r'\b(?:\d{1,3}\.){3}\d{1,3}\b')
@@ -236,3 +236,4 @@ def upload_ips():
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
+
